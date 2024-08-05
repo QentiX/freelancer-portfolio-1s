@@ -1,0 +1,87 @@
+@import '/css/reset.css';
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100..1000&family=Poppins:wght@400;500;700&display=swap');
+
+/*
+	font-family: "DM Sans", sans-serif;
+	font-family: "Poppins", sans-serif;
+*/
+
+:root{
+	--black: #171718;
+	--black-border: #26292d;
+	--white: #fff;
+	--purple: #5C62EC;
+
+	--dark-bg: var(--black);
+	--dark-border: var(--black-border);
+	--header-text: var(--white);
+	--accent: var(--purple);
+}
+
+html,
+body {
+	font-family: 'DM Sans', sans-serif;
+}
+
+.container {
+	max-width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+/* NAV */
+
+.nav {
+	padding: 20px 0;
+	background-color: var(--dark-bg);
+	color: var(--header-text);
+	border-bottom: 1px solid var(--dark-border);
+}
+
+.nav-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	column-gap: 30px;
+	row-gap: 20px;
+	flex-wrap: wrap;
+}
+
+.logo {
+	font-family: 'Poppins', sans-serif;
+	color: inherit;
+	font-size: 24px;
+}
+
+.logo strong {
+	font-weight: 700;
+}
+
+.nav-list {
+	display: flex;
+	align-items: center;
+	column-gap: 40px;
+	font-size: 16px;
+	font-weight: 500;
+	font-family: 'Poppins', sans-serif;
+	list-style: none;
+}
+
+.nav-list__link {
+	color: inherit;
+}
+
+.nav-list__link--active {
+	position: relative;
+}
+
+.nav-list__link--active::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 100%;
+	display: block;
+	height: 2px;
+	width: 100%;
+	background-color: var(--accent);
+}
