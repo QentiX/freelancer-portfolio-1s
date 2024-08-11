@@ -1,2 +1,2 @@
 # freelancer-portfolio-1s
-  Простой сайт портфолио на HTML, CSS, JS
+  A simple portfolio website using HTML, CSS, JS
